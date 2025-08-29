@@ -1,0 +1,100 @@
+/* Glassmorphism Navbar */
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0.5rem 1rem;
+  background: rgba(21, 20, 9, 0.687);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(232, 220, 80, 0.2);    
+  z-index: 1000;
+}
+
+.nav-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Logo */
+.logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+  cursor: pointer;
+}
+.logo .makeblack{
+  color: #fcec03;
+}
+
+/* Menu items */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+}
+
+/* Remove underline from all links */
+.nav-item a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 200;
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover effect */
+  .nav-item a:hover {
+    color: #fcec03;
+  }
+  
+  /* Active link styling */
+  .nav-item a.active-link {
+    color: #fcec03;
+    font-weight: 400;
+  }
+  
+
+/* Mobile menu toggle */
+.menu-btn {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+.menu-btn .bar {
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 4px;
+}
+
+/* Mobile dropdown */
+.nav-menu.mobile {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 12px;
+  gap: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-menu.desktop {
+    display: none;
+  }
+  .menu-btn {
+    display: flex;
+  }
+}

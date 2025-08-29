@@ -1,0 +1,29 @@
+/* Reset default browser spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap');
+
+/* Headings & Navbar */
+.logo, .nav-item, h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Body styling */
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background: url('./assets/radiation.jpeg') no-repeat center center fixed;
+  color:black;
+}
+
+.body-container
+{
+
+}

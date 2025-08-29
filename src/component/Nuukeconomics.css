@@ -1,0 +1,74 @@
+.nuuke-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 3rem;
+    background: url("/assets/bg-image.jpg") no-repeat center center/cover; /* same bg */
+  }
+  
+  /* Glass card */
+  .nuuke-box {
+    max-width: 800px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 3rem;
+    text-align: center;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 
+      0 8px 32px rgba(0, 0, 0, 0.25),
+      inset 0 1px 0 rgba(255, 255, 255, 0.4),
+      inset 0 -1px 0 rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Titles */
+  .nuuke-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fcec03;
+    margin-bottom: 1.5rem;
+  }
+  
+  .nuuke-supply {
+    font-size: 1.2rem;
+    color: #e0e0e0;
+    margin-bottom: 2rem;
+  }
+  
+  .nuuke-subtitle {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: white;
+  }
+  
+  /* Allocation list */
+  .nuuke-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .nuuke-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    color: #e0e0e0;
+    background: rgba(0, 0, 0, 0.25);
+    padding: 0.8rem 1.2rem;
+    border-radius: 12px;
+    transition: background 0.3s ease;
+  }
+  
+  .nuuke-item:hover {
+    background: rgba(252, 236, 3, 0.2);
+  }
+  
+  .highlight {
+    color: #fcec03;
+    font-weight: 700;
+  }
+  
